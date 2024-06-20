@@ -24,7 +24,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links 
 
-- Solution URL: [solution URL here](https://github.com/AmrGobran/Frontend-Mentor-Recipe-Page)
+- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/html5-css3-h99Q-ovZOt)
 - Live site URL: [live site URL here](https://amrgobran.github.io/Frontend-Mentor-Recipe-Page/)
 
 ## My process
