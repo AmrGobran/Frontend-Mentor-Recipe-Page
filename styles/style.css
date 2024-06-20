@@ -1,0 +1,319 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* initial root properties */
+:root {
+  /* colors */
+  /* primary */
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+  /* neutral */
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+  /* font-families */
+  --ff-young-serif: "Young Serif";
+  --ff-outfit: "Outfit";
+  /* font-wights */
+  --fw-4: 400;
+  --fw-6: 600;
+  --fw-7: 700;
+  /* display sizes */
+  --mobile: 375px;
+  --desktop: 1440px;
+}
+
+/* root font size */
+html {
+  font-size: 16px;
+}
+
+/* global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 0;
+  font-family: var(--ff-outfit);
+}
+
+h1,
+h2 {
+  font-family: var(--ff-young-serif);
+  font-weight: var(--fw-4);
+}
+
+h1,
+span {
+  color: var(--dark-charcoal);
+}
+
+h2 {
+  font-size: 3.5rem;
+  color: var(--nutmeg);
+  margin-top: 3rem;
+}
+
+span {
+  font-weight: var(--fw-6);
+  margin: 0;
+}
+
+ul span {
+  margin-left: 1.5rem;
+}
+
+p,
+li,
+table {
+  font-size: 2rem;
+  color: var(--wenge-brown);
+}
+
+hr {
+  height: 2px;
+  border-width: 0;
+  margin: 0;
+  color: var(--light-grey);
+  background-color: var(--light-grey);
+}
+
+.preparation {
+  background-color: var(--rose-white);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  color: var(--dark-raspberry);
+}
+
+ul {
+  list-style-position: inside;
+  padding: 0;
+}
+
+li {
+  margin-left: 0.5rem;
+}
+
+ol li {
+  padding-left: 1.5rem;
+}
+
+li::marker {
+  color: var(--nutmeg);
+  font-weight: var(--fw-7);
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+.nutrition-table {
+  border: none;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition-table td {
+  padding: 1rem;
+}
+
+.nutrition-table tr:not(:last-child) {
+  border-bottom: 2px solid var(--light-grey);
+}
+
+.value {
+  color: var(--nutmeg);
+  font-weight: var(--fw-7);
+}
+
+/* desktop */
+.container {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding: 3rem 3rem 2rem 3rem;
+}
+
+.container img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+header h1 {
+  font-size: 5.125rem;
+}
+
+.preparation ul {
+  margin-left: 2rem;
+}
+
+.preparation ul li::marker {
+  color: var(--dark-raspberry);
+}
+
+/* ----------- */
+
+/* attribution */
+.attribution {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+  }
+
+  header h1 {
+    font-size: 4.2rem;
+  }
+
+  p,
+  li,
+  table {
+    font-size: 1.3rem;
+    color: var(--wenge-brown);
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+  }
+
+  ol {
+    padding: 20px;
+  }
+
+  .attribution {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 950px) {
+  header h1 {
+    font-size: 3.7rem;
+  }
+
+  p,
+  li,
+  table {
+    font-size: 1rem;
+    color: var(--wenge-brown);
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  ol {
+    padding: 20px;
+  }
+
+  .attribution {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 0;
+  }
+
+  .container img {
+    border-radius: 0;
+  }
+
+  .mobile-container {
+    padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+  }
+
+  header h1 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  ul span {
+    margin-left: 0;
+  }
+
+  li {
+    margin-left: 0.2rem;
+  }
+
+  ol li {
+    padding-left: 1rem;
+  }
+
+  .preparation {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+
+  .preparation ul {
+    margin-left: 1rem;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  p,
+  li,
+  table {
+    font-size: 0.85rem;
+    color: var(--wenge-brown);
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+  }
+
+  section {
+    margin-bottom: 2rem;
+  }
+
+  .attribution {
+    font-size: 0.7rem;
+  }
+
+  .nutrition-table td {
+    padding: 0.6rem;
+  }
+}
